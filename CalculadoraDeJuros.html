@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Calculadora De Juros</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <script src="main.js"></script>
+		<input type="text" id="C" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>Capital Inicial</input><br>
+		<input type="text" id="I" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>% Juros</input><br>
+		<input type="text" id="T" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>Tempo</input><br><br>
+		<button onclick="Atribuir()">Calcular</button>
+
+	<div id="resultado"></div>
+  
+
+</body>
+
+</html>

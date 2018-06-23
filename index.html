@@ -9,14 +9,16 @@
 
 <body>
     <script src="main.js"></script>
-		<input type="text" id="C" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>Capital Inicial</input><br>
-		<input type="text" id="I" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>% Juros</input><br>
-		<input type="text" id="T" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>Tempo</input><br><br>
-		<button onclick="Atribuir()">Calcular</button>
-
+		<input type="text" id="C" onchange="preenchido[0]=true" onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode == 46'>Capital Inicial</input><br>
+		<input type="text" id="I" onchange="preenchido[1]=true" onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.charCode == 46'>% Juros</input><br>
+        <input type="text" id="T" onchange="preenchido[2]=true" onkeypress='return event.charCode >= 48 && event.charCode <= 57 '>Tempo</input><br>
+        <input type="radio" name="gender" onchange="preenchido[3]=true" value="Dia">Dias
+        <input type="radio" name="gender" onchange="preenchido[3]=true" value="Mês" >Mêses
+        <input type="radio" name="gender" onchange="preenchido[3]=true" value="Ano">Anos
+        <br><br>
+        <button onclick="Atribuir()">Calcular</button>
+    
 	<div id="resultado"></div>
   
 
 </body>
-
-</html>
